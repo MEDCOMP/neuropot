@@ -1,1 +1,1 @@
-from .n4 import n4
+from .intensityNormalization import n4normalization
