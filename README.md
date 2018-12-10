@@ -9,7 +9,7 @@ Preprocessing pipeline:
 - Normalization
 - Smoothing
 
-`
+```python
 import os
 from neuropot.preprocessing import n4_normalization, acpc_correction, skull_stripping, gm_segmentation, normalization, smoothing
 
@@ -38,4 +38,4 @@ print("Normalization done: ",image_N4_acpc_ss_seg_registered_path)
 # Smoothing
 image_N4_acpc_ss_seg_registered_smooth_path = smoothing(image_N4_acpc_ss_seg_registered_path)
 print("Smoothing done: ",image_N4_acpc_ss_seg_registered_smooth_path)
-`
+```
