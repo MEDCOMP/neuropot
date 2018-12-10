@@ -11,7 +11,9 @@ Preprocessing pipeline:
 
 ```python
 import os
-from neuropot.preprocessing import n4_normalization, acpc_correction, skull_stripping, gm_segmentation, normalization, smoothing
+from neuropot.preprocessing import *
+# imports n4_normalization, acpc_correction, skull_stripping, 
+# gm_segmentation, normalization, smoothing
 
 path = os.getcwd()
 
