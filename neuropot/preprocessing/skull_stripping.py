@@ -13,7 +13,7 @@ def skull_stripping(input_filename,workdir="/workdir",output_filename="image_N4_
 	res = output_filename
 
 	try:
-		process = subprocess.Popen('/usr/local/fsl/bin/bet %s %s -B -f 0.3 -g 0 > log.txt'%args, shell=True)
+		process = subprocess.Popen('/usr/local/fsl/bin/bet %s %s -B -f 0.3 -g 0 > /dev/null'%args, shell=True)
 		process.wait()
 	except Exception as e:
 		print("We got an Exception in ss03")

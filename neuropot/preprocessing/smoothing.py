@@ -13,7 +13,7 @@ def smoothing(input_filename,workdir="/workdir",output_filename="image_N4_acpc_s
 	res = output_filename
 
 	try:
-		process = subprocess.Popen('fslmaths %s -s 3.3972872011520763 %s > log.txt'%args, shell=True)
+		process = subprocess.Popen('fslmaths %s -s 3.3972872011520763 %s > /dev/null'%args, shell=True)
 		process.wait()
 	except Exception as e:
 		print("We got an Exception in smoothing")
