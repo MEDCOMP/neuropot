@@ -11,7 +11,7 @@ def acpc_correction(input_filename,workdir="/workdir",output_filename="image_N4_
 	mat_filename = workdir + "/" + mat_filename
 
 	process = None
-	args = (path,workdir,input_filename,template_filename,output_filename,mat_filename)
+	args = (workdir,input_filename,template_filename,output_filename,mat_filename)
 	res = output_filename
 
 	try:
