@@ -8,11 +8,11 @@ setup(name='neuropot',
       author_email='abhinit@comp.nus.edu.sg',
       license='MIT',
       packages=find_packages(),
+      package_data={
+      	'preprocessing':['neuropot/preprocessing/template/*.nii']
+      },
       scripts=[
       	'neuropot/preprocessing/bin/ACPCAlignment.sh'
-      ],
-      data_files=[
-      	('neuropot/preprocessing/template',['neuropot/preprocessing/template/mni152.nii','neuropot/preprocessing/template/template.nii','neuropot/preprocessing/template/vbm_template.nii'])
       ],
       install_requires=[
       	'SimpleITK'
