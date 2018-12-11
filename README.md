@@ -1,8 +1,8 @@
-##NeuroPot
+## NeuroPot
 
 NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods.
 
-###Preprocessing pipeline:
+### Preprocessing pipeline:
 
 This pipeline requires FSL: [Install FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation#Installing_FSL)
 
