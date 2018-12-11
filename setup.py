@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='neuropot',
-      version='0.1.2',
+      version='0.1.3',
       description='NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods.',
       url='https://github.com/MEDCOMP/neuropot',
       author='Abhinit Ambastha',
