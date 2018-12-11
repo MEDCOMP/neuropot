@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='neuropot',
-      version='0.1.7',
+      version='0.1.8',
       description='NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods.',
       url='https://github.com/MEDCOMP/neuropot',
       author='Abhinit Ambastha',
@@ -15,6 +15,7 @@ setup(name='neuropot',
       	'neuropot/preprocessing/bin/ACPCAlignment.sh'
       ],
       install_requires=[
-      	'SimpleITK'
+      	'SimpleITK',
+            'numpy'
       ],
       zip_safe=False)

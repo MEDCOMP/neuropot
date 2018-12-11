@@ -15,7 +15,7 @@ def acpc_correction(input_filename,workdir="/workdir",output_filename="image_N4_
 	res = output_filename
 
 	try:
-		process = subprocess.Popen('sh ACPCAlignment.sh --workingdir=%s --in=%s --ref=%s --out=%s --omat=%s > /dev/null'%args, shell=True)
+		process = subprocess.Popen('ACPCAlignment.sh --workingdir=%s --in=%s --ref=%s --out=%s --omat=%s > /dev/null'%args, shell=True)
 		process.wait()
 	except Exception as e:
 		print("We got an Exception")

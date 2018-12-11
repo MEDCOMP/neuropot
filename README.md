@@ -11,11 +11,45 @@ For MAC OSX, you can download the installer script [here](https://gist.github.co
 
 It is important to follow the the [shell setup](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/ShellSetup), one way to check whether the shell is not configured is that all fsl applications will appear with a 'fsl-5.0' prefix e.g. 'fsl-5.0-bet' instead of 'bet'.
 
+'commands' package bug. FSL is slightly incompatible with python3. Commands package is depreciated in python3, but imported in a file in FSL (but not used!), so we can remove it:
+
+```shell
+sudo vim /usr/local/fsl/bin/aff2rigid 
+```
+
+Delete the following line:
+
+```python
+from commands import getoutput
+```
+
+
+3. #### Setup virtualenv
+
+```python
+#Install virtualenv in case not present
+pip install virtualenv
+
+#Setup a virtual environment
+virtualenv neuro
+
+#Activate the environment
+source ./neuro/bin/activate
+
+# You should see the prompt:
+# (neuro)$
+
+# To quit the virtualenv
+# (neuro)$ deactivate
+```
+
 2. #### Install the neurpot package via pip:
 
 ```shell
-pip install neuropot
+(neuro)$ pip install neuropot
 ```
+
+You should be good to go!
 
 3. #### Now you can import and use the processing pipeline as follows:
 
