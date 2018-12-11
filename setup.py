@@ -8,6 +8,12 @@ setup(name='neuropot',
       author_email='abhinit@comp.nus.edu.sg',
       license='MIT',
       packages=find_packages(),
+      scripts=[
+      	'bin/ACPCAlignment.sh'
+      ],
+      data_files=[
+      	('template',['mni152.nii','template.nii','vbm_template.nii'])
+      ],
       install_requires=[
       	'SimpleITK'
       ],
