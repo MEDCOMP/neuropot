@@ -28,6 +28,15 @@ from neuropot.preprocessing import *
 ```
 You can try the samples given below.
 
+Possible issue with permissions for executing ACPC detect - in case a 'Can't open ACPCAlignment.sh' error, check the permissions for the file and change it to executable:
+
+```shell
+sudo chmod +x /usr/local/bin/ACPCAlignment.sh
+chown <username>:<username> /usr/local/bin/ACPCAlignment.sh
+```
+
+On Linux systems, you can get a 'sh: 0: Can't open ACPCAlignment.sh' error. For this you will need to edit the acpc_correction.py in the package. (we will provide a fix soon!)
+
 ### Preprocessing pipeline:
 
 This pipeline requires FSL: [Install FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation#Installing_FSL)
