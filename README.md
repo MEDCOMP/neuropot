@@ -1,6 +1,10 @@
-## NeuroPot: MRI preprocessing pipeline
+##NeuroPot
 
-Preprocessing pipeline:
+NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods.
+
+###Preprocessing pipeline:
+
+This pipeline requires FSL: [Install FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation#Installing_FSL)
 
 - N4 normalization
 - ACPC correction
