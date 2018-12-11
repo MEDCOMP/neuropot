@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='neuropot',
-      version='0.1.3',
+      version='0.1.4',
       description='NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods.',
       url='https://github.com/MEDCOMP/neuropot',
       author='Abhinit Ambastha',
@@ -9,10 +9,10 @@ setup(name='neuropot',
       license='MIT',
       packages=find_packages(),
       scripts=[
-      	'bin/ACPCAlignment.sh'
+      	'neuropot/preprocessing/bin/ACPCAlignment.sh'
       ],
       data_files=[
-      	('template',['mni152.nii','template.nii','vbm_template.nii'])
+      	('neuropot/preprocessing/template',['neuropot/preprocessing/template/mni152.nii','neuropot/preprocessing/template/template.nii','neuropot/preprocessing/template/vbm_template.nii'])
       ],
       install_requires=[
       	'SimpleITK'
