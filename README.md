@@ -12,7 +12,7 @@ docker tag <image_id> neuropot:version1.0
 
 Create a container:
 ```shell
-docker create -it --name neuro1 neuropot:version0.1 bash
+docker create -it --name neuro1 neuropot:version1.0 bash
 ```
 
 Start and attach to a container:
