@@ -2,6 +2,9 @@
 
 NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods.
 
+![Input image](assets/input.png?raw=true "Input image")
+![Processed image](assets/output.png?raw=true "Processed image")
+
 ### Docker
 
 Build the docker image using:
