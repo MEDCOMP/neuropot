@@ -15,7 +15,7 @@ def normalization(input_filename,workdir="/workdir",output_filename="image_N4_ac
 	res = output_filename
 
 	try:
-		process = subprocess.Popen('/usr/local/fsl/bin/flirt -in %s -ref %s -out %s -omat %s -bins 256 -cost corratio -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 12  -interp trilinear > /dev/null'%args, shell=True)
+		process = subprocess.Popen('flirt -in %s -ref %s -out %s -omat %s -bins 256 -cost corratio -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 12  -interp trilinear > /dev/null'%args, shell=True)
 		process.wait()
 	except Exception as e:
 		print("We got an Exception in normalization")
