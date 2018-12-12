@@ -20,19 +20,17 @@ RUN apt-get update
 RUN wget -O /tmp/libpng.deb http://security.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1.1_amd64.deb && dpkg -i /tmp/libpng.deb
 RUN apt-get install -y fsl-5.0-core fsl-first-data
 
-# Mod FSL
+# Mod FSL (for linux)
 ENV FSLDIR=/usr/share/fsl/5.0
 
 RUN whoami
 RUN chown -R root:root ${FSLDIR}/etc/fslconf/fsl.sh
 RUN chmod -R 700 ${FSLDIR}/etc/fslconf/fsl.sh
 
-RUN ls -la /usr/share/fsl/5.0/etc/fslconf/
-
 RUN ${FSLDIR}/etc/fslconf/fsl.sh
 ENV PATH=${FSLDIR}/bin:${PATH}
-
-RUN printenv
+ENV LD_LIBRARY_PATH=${FSLDIR}/bin:$LD_LIBRARY_PATH
+RUN source ${FSLDIR}/etc/fslconf/fsl.sh
 
 RUN wget -O ${FSLDIR}/bin/aff2rigid  https://gist.githubusercontent.com/abhinit/50e931d6281d74dc4e4fbe462d64c240/raw/a5bee0f73fa81d61cc8edec81559a8a134d9befb/aff2rigid
 
