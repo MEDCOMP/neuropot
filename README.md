@@ -2,6 +2,36 @@
 
 NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods.
 
+### Docker
+
+Build the docker image using:
+```shell
+docker build .
+docker tag <image_id> neuropot:version1.0
+```
+
+Create a container:
+```shell
+docker create -it --name neuro1 neuropot:version0.1 bash
+```
+
+Start and attach to a container:
+```shell
+docker start -ai neuro1
+```
+
+This will drop you in the shell!
+```shell
+root@618cac06237d:/usr/src/preprocessor# 
+root@618cac06237d:/usr/src/preprocessor# python
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import neuropot.preprocessing as preproc
+>>> 
+```
+
+
 ### Quickstart
 
 1. #### Setup FSL:
