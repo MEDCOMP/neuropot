@@ -32,7 +32,7 @@ ENV PATH=${FSLDIR}/bin:${PATH}
 ENV LD_LIBRARY_PATH=${FSLDIR}/bin:$LD_LIBRARY_PATH
 RUN sh ${FSLDIR}/etc/fslconf/fsl.sh
 
-RUN wget -O ${FSLDIR}/bin/aff2rigid  https://gist.githubusercontent.com/abhinit/50e931d6281d74dc4e4fbe462d64c240/raw/a5bee0f73fa81d61cc8edec81559a8a134d9befb/aff2rigid
+RUN wget -O ${FSLDIR}/bin/aff2rigid  https://gist.githubusercontent.com/abhinit/50e931d6281d74dc4e4fbe462d64c240/raw/84ae0e283786d9f19fcce4b026b3914cf4de5975/aff2rigid
 
 # Get neuropot package
 RUN alias python=python3
