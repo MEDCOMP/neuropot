@@ -1,6 +1,6 @@
 ## NeuroPot (pip package)
 
-NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods. The preprocessing pipeline works for MPRAGE, but ones following ADNI protocol (MPR-R or MPRAGE REPEAT often DON'T follow the ADNI protocol, please check the orientations before use).
+NeuroPot is a library which provides automated processing of neuroradiological images, data cleaning and manipulation functionality, machine learning algorithms and transfer learning methods. **The preprocessing pipeline works for MPRAGE, but ones following ADNI protocol (MPR-R or MPRAGE REPEAT often DON'T follow the ADNI protocol, please check the orientations before use)**.
 
 ![Input image](assets/input.png?raw=true "Input image")
 ![Processed image](assets/processed.png?raw=true "Processed image")
